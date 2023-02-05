@@ -1,0 +1,39 @@
+<main>
+    <div class="album py-5 bg-secondary">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <!-- Aquí comienza el each-->
+                {{#each tasks}}
+                {{#if male}}
+                <div class="col">
+                    <div class="card shadow-sm">
+                        <img
+                            src="{{img}}"
+                            class="bd-placeholder-img card-img-top"
+                            width="100%"
+                            height="225"
+                            xmlns="http://www.w3.org/2000/svg"
+                            role="img"
+                            aria-label="Placeholder: Thumbnail"
+                            preserveAspectRatio="xMidYMid slice"
+                            focusable="false"
+                        >
+                            <title>Placeholder</title>
+                            <rect width="100%" height="100%" fill="#55595c" />
+                        </img>
+                        <div class="card-body">
+                            <h3>{{title}}</h3>
+                            <p class="card-text">
+                                {{description}}
+                            </p>
+                        </div>
+                        <small class="text-muted set">{{sex}}</small>
+                    </div>
+                </div>
+                {{/if}}
+                {{/each}}
+                <!--aquí termina el each-->
+            </div>
+        </div>
+    </div>
+</main>

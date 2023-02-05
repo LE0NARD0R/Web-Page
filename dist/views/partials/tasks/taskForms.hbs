@@ -1,0 +1,54 @@
+<div class=" p-4 rounded-5 bg-secondary shadow-sm text-light">
+  <form action="/task/add" method="POST">
+    <div class="form-group">
+      <label for="title">Write your title:</label>
+      <input type="text" name="title" placeholder="Title" id="title" class="form-control border-2  rounded-3 bg-secondary" />
+    </div>
+
+    <div class="form-group">
+      <label for="description">Write your description:</label>
+      <textarea
+        name="description"
+        placeholder="Description"
+        id="description"
+        class="form-control rounded-3 border-2 bg-secondary"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="img">Put the link below:</label>
+      <textarea name="img" id="img" placeholder="Put the link" class="form-control rounded-3 border-2 bg-secondary"></textarea>
+    </div>
+
+    <div class="my-3">
+      <div class="form-check">
+        <input
+          id="male"
+          name="sex"
+          value="Male"
+          type="radio"
+          class="form-check-input"
+          checked
+          required
+        />
+        <label class="form-check-label" for="male">Male</label>
+      </div>
+      <div class="form-check">
+        <input
+          id="female"
+          name="sex"
+          value="Female"
+          type="radio"
+          class="form-check-input"
+          required
+        />
+        <label class="form-check-label" for="female">Female</label>
+      </div>
+    </div>
+
+    <div>
+      <button class="btn btn-outline-light border-2 rounded-5">Add</button>
+    </div>
+
+  </form>
+</div>
