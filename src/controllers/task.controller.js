@@ -70,7 +70,7 @@ export const endeditTask = async (req, res) => {
 export const deleteTask = async (req, res) => {
   const { id } = req.params;
   await Task.findByIdAndDelete(id);
-  res.redirect("/");
+  res.redirect("/config");
 };
 
 export const togleTask = async (req, res) => {
