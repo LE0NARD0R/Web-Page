@@ -73,14 +73,6 @@ export const deleteTask = async (req, res) => {
   res.redirect("/config");
 };
 
-export const togleTask = async (req, res) => {
-  const { id } = req.params;
-  const task = await Task.findById(id);
-  task.done = !task.done;
-  await task.save();
-  res.redirect("/");
-};
-
 export const about = (req, res) => {
   res.render("about");
 };

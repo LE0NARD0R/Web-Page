@@ -3,7 +3,6 @@ import {
   createTask,
   editTask,
   deleteTask,
-  togleTask,
   endeditTask,
   goToHome,
   renderConfig,
@@ -24,8 +23,6 @@ router.get("/edit/:id", editTask);
 router.post("/edit/:id", endeditTask);
 
 router.get("/delete/:id", deleteTask);
-
-router.get("/togle/:id", togleTask);
 
 router.get("/men", renderMen);
 
