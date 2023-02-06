@@ -35,7 +35,7 @@ export const createTask = async (req, res) => {
   }
 
   await task.save();
-  res.redirect("/");
+  res.redirect("/config");
 };
 
 export const editTask = async (req, res) => {
@@ -64,7 +64,7 @@ export const endeditTask = async (req, res) => {
     console.log(error);
   }
   await Task.findByIdAndUpdate(id, req.body);
-  res.redirect("/");
+  res.redirect("/config");
 };
 
 export const deleteTask = async (req, res) => {

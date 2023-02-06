@@ -13,9 +13,9 @@ import {
 } from "../controllers/task.controller";
 const router = Router();
 
-router.get("/", renderConfig);
+router.get("/", goToHome);
 
-router.get('/home', goToHome);
+router.get('/config', renderConfig);
 
 router.post("/task/add", createTask);
 
